@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.min.css">
+  <title>Lista de Tareas</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="row">
+      <div class="column sm12 md12 xl12">
+        <h1>Lista de Tareas</h1>
+      </div>
+    </div>
+  </header>
+
+  <section class="row">
+    <div class="column sm12 md-offset-2 md8 xl-offset-3 xl6">
+      <div id="container-input-search">
+        <span id="task-icon"><i class="material-icons">assignment</i></span>
+        <input type="text" id="task" placeholder="Pone tu tarea">
+        <button type="button" name="button" id="add-button">agregar</button>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="container">
+      <div class="row">
+
+        <div class="column sm12 md4 xl4" id="to-do" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <h2>to do</h2>
+          <!-- tareas para hacer -->
+        </div>
+
+        <div class="column sm12 md4 xl4" id="in-progress" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <h2>in progress</h2>
+          <!-- tareas en progreso -->
+        </div>
+
+        <div class="column sm12 md4 xl4" id="done" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <h2>done</h2>
+          <!-- tareas en progreso -->
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- <h1>Aca va el footer con el nombre de la aplicación</h1> -->
+  </footer>
+
+  <script src="js/app.js" charset="utf-8"></script>
+
+</body>
+
+</html>
+<!--<div id="1" class="task-card" draggable="true" ondragstart="drag(event)">
+  <span class="date">fecha</span>
+  <span class="bullet to-do"></span>
+  <button class="delete-card"><i class="material-icons">close</i></button>
+  <p class="body1">texto1</p>
+</div>-->
